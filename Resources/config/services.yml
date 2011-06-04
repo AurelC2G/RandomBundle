@@ -2,6 +2,10 @@
 services:
     aurel_random.uniform:
         class:        Aurel\RandomBundle\Generator\UniformGenerator
+    aurel_random.gaussian:
+        class:        Aurel\RandomBundle\Generator\GaussianGenerator
+        arguments:
+            - @aurel_random.uniform
     aurel_random.main:
         class:        Aurel\RandomBundle\Generator\MainGenerator
         arguments:
