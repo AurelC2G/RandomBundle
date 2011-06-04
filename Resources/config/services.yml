@@ -1,0 +1,4 @@
+
+services:
+    aurel_random.uniform:
+        class:        Aurel\RandomBundle\Generator\UniformGenerator
