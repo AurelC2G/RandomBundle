@@ -2,3 +2,7 @@
 services:
     aurel_random.uniform:
         class:        Aurel\RandomBundle\Generator\UniformGenerator
+    aurel_random.main:
+        class:        Aurel\RandomBundle\Generator\MainGenerator
+        arguments:
+            - @aurel_random.uniform
