@@ -10,3 +10,4 @@ services:
         class:        Aurel\RandomBundle\Generator\MainGenerator
         arguments:
             - @aurel_random.uniform
+            - @aurel_random.gaussian
