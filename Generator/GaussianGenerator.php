@@ -30,7 +30,7 @@ class GaussianGenerator implements GaussianGeneratorInterface
      */
     public function get($m = 0.0, $s = 1.0)
     {
-        return $s * gauss() + $m;
+        return $s * $this->gauss() + $m;
     }
 
     /**
