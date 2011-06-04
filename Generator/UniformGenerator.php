@@ -2,7 +2,8 @@
 
 namespace Aurel\RandomBundle\Generator;
 
-class UniformGenerator
+
+class UniformGenerator implements UniformGeneratorInterface
 {
     /**
      * Toss a coin and return the result.
