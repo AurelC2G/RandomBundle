@@ -3,7 +3,7 @@
 namespace Aurel\RandomBundle\Generator;
 
 
-class MainGenerator
+class MainGenerator implements MainGeneratorInterface
 {
     /**
      * Uniform number generator
@@ -18,13 +18,13 @@ class MainGenerator
         $this->uniform = $uniform;
     }
     
-    /**
-     * Get the uniform generator
-     *
-     * @return UniformGenerator $uniform
-     */
-    public function uniform()
+    public function tossCoin($proba = 0.5)
     {
-        return $this->uniform;
+        return $this->uniform->tossCoin($proba);
+    }
+    
+    public function uniformGet($min = 0.0, $max = 1.0)
+    {
+        return $this->uniform->get($min, $max);
     }
 }
